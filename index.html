@@ -11,7 +11,7 @@
         extend: {
           colors: {
             brand: '#558eff',
-            dark: '#0a0a1a',
+            dark: '#000000',
             surface: '#12122a',
             card: '#1a1a3e',
             cream: '#faf9f6',
@@ -116,7 +116,7 @@
 
         <div class="flex flex-wrap gap-4 mb-12">
           <a href="#dossiers" class="inline-flex items-center gap-2 bg-brand text-white font-bold px-6 py-3 border-2 border-brand shadow-brutal-lg card-hover">
-            Voir les 28 dossiers
+            Voir les 27 dossiers
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
           </a>
           <a href="#alertes" class="inline-flex items-center gap-2 bg-alert/20 text-alert font-bold px-6 py-3 border-2 border-alert shadow-brutal-alert card-hover">
@@ -127,11 +127,11 @@
         <!-- Stats rapides -->
         <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
           <div class="bg-surface border-2 border-brand/30 shadow-brutal p-4 text-center card-hover">
-            <div class="text-3xl font-black text-brand counter" data-target="28">0</div>
+            <div class="text-3xl font-black text-brand counter" data-target="27">0</div>
             <div class="text-xs font-bold text-gray-400 uppercase tracking-wider mt-1">Dossiers</div>
           </div>
           <div class="bg-surface border-2 border-success/30 shadow-brutal p-4 text-center card-hover">
-            <div class="text-3xl font-black text-success counter" data-target="76">0</div>
+            <div class="text-3xl font-black text-success counter" data-target="47">0</div>
             <div class="text-xs font-bold text-gray-400 uppercase tracking-wider mt-1">Rapports PDF</div>
           </div>
           <div class="bg-surface border-2 border-white/20 shadow-brutal p-4 text-center card-hover">
@@ -139,7 +139,7 @@
             <div class="text-xs font-bold text-gray-400 uppercase tracking-wider mt-1">Erreurs</div>
           </div>
           <div class="bg-surface border-2 border-alert/30 shadow-brutal p-4 text-center card-hover">
-            <div class="text-3xl font-black text-alert counter" data-target="4">0</div>
+            <div class="text-3xl font-black text-alert counter" data-target="3">0</div>
             <div class="text-xs font-bold text-gray-400 uppercase tracking-wider mt-1">Alertes PPE</div>
           </div>
         </div>
@@ -235,511 +235,463 @@
     <div class="max-w-6xl mx-auto px-4">
       <div class="max-w-2xl mb-12 fade-in">
         <span class="tag bg-brand text-white border-brand mb-4">Fevrier 2026</span>
-        <h2 class="text-3xl sm:text-5xl font-black mt-4 mb-6 text-white">28 dossiers traites</h2>
+        <h2 class="text-3xl sm:text-5xl font-black mt-4 mb-6 text-white">27 dossiers traites</h2>
         <p class="text-lg text-gray-300">Chaque dossier ci-dessous a ete verifie automatiquement. Tu peux cliquer sur le lien MyNotary pour voir le dossier, ou sur les PDFs pour telecharger les rapports.</p>
       </div>
 
       <div class="grid gap-3" id="dossiers-list">
 
-        <!-- 1 -->
-        <div class="bg-surface border-2 border-white/10 p-4 sm:p-5 card-hover fade-in">
-          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-            <div class="flex-1 min-w-0">
-              <div class="flex items-center gap-2 flex-wrap mb-1">
-                <span class="tag bg-brand/20 text-brand border-brand/50 text-xs">Mandat de vente</span>
-                <span class="text-xs text-gray-400 font-mono">02 fev</span>
-              </div>
-              <h3 class="font-bold text-sm sm:text-base truncate text-white">DIARRA - BERTE / Clement DAMBELIN</h3>
-            </div>
-            <div class="flex items-center gap-2 shrink-0">
-              <a href="https://api.mynotary.fr/files/cc35cb83-55b7-41ff-9faf-cf1102837094" target="_blank" class="tag bg-card text-gray-200 border-white/20 hover:bg-brand hover:text-white hover:border-brand transition-colors cursor-pointer">PDF</a>
-              <a href="https://api.mynotary.fr/files/33c56483-d05d-43ec-8bbd-764c39c96044" target="_blank" class="tag bg-card text-gray-200 border-white/20 hover:bg-brand hover:text-white hover:border-brand transition-colors cursor-pointer">PDF</a>
-              <a href="https://api.mynotary.fr/files/46498559-e4e9-439f-9966-9e7f26d96b6d" target="_blank" class="tag bg-card text-gray-200 border-white/20 hover:bg-brand hover:text-white hover:border-brand transition-colors cursor-pointer">PDF</a>
-              <a href="https://app.mynotary.fr/operation/35566620/espace-stockage" target="_blank" class="tag bg-brand text-white border-brand hover:bg-white hover:text-dark transition-colors cursor-pointer link-arrow">MyNotary</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- 2 -->
-        <div class="bg-surface border-2 border-white/10 p-4 sm:p-5 card-hover fade-in">
-          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-            <div class="flex-1 min-w-0">
-              <div class="flex items-center gap-2 flex-wrap mb-1">
-                <span class="tag bg-accent/20 text-accent border-accent/50 text-xs">Offre d'achat</span>
-                <span class="text-xs text-gray-400 font-mono">02 fev</span>
-              </div>
-              <h3 class="font-bold text-sm sm:text-base truncate text-white">Loire-Authion / Audraine BENON</h3>
-            </div>
-            <div class="flex items-center gap-2 shrink-0">
-              <a href="https://api.mynotary.fr/files/da2dc6d0-825b-4dfc-bcd3-a83f8532e76e" target="_blank" class="tag bg-card text-gray-200 border-white/20 hover:bg-brand hover:text-white hover:border-brand transition-colors cursor-pointer">PDF</a>
-              <a href="https://app.mynotary.fr/operation/35601763/espace-stockage" target="_blank" class="tag bg-brand text-white border-brand hover:bg-white hover:text-dark transition-colors cursor-pointer link-arrow">MyNotary</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- 3 -->
-        <div class="bg-surface border-2 border-white/10 p-4 sm:p-5 card-hover fade-in">
-          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-            <div class="flex-1 min-w-0">
-              <div class="flex items-center gap-2 flex-wrap mb-1">
-                <span class="tag bg-brand/20 text-brand border-brand/50 text-xs">Mandat de vente</span>
-                <span class="text-xs text-gray-400 font-mono">02 fev</span>
-              </div>
-              <h3 class="font-bold text-sm sm:text-base truncate text-white">SCI DE LA RISLE / Saint-Germain-Laval</h3>
-            </div>
-            <div class="flex items-center gap-2 shrink-0">
-              <a href="https://api.mynotary.fr/files/df5c05ba-969f-4c8a-8055-df9d9d60942f" target="_blank" class="tag bg-card text-gray-200 border-white/20 hover:bg-brand hover:text-white hover:border-brand transition-colors cursor-pointer">PDF</a>
-              <a href="https://app.mynotary.fr/operation/35440258/espace-stockage" target="_blank" class="tag bg-brand text-white border-brand hover:bg-white hover:text-dark transition-colors cursor-pointer link-arrow">MyNotary</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- 4 -->
-        <div class="bg-surface border-2 border-white/10 p-4 sm:p-5 card-hover fade-in">
-          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-            <div class="flex-1 min-w-0">
-              <div class="flex items-center gap-2 flex-wrap mb-1">
-                <span class="tag bg-brand/20 text-brand border-brand/50 text-xs">Mandat de vente</span>
-                <span class="text-xs text-gray-400 font-mono">03 fev</span>
-              </div>
-              <h3 class="font-bold text-sm sm:text-base truncate text-white">SCI JAC (GREGOIRE/BRUNET) / Bessines</h3>
-            </div>
-            <div class="flex items-center gap-2 shrink-0">
-              <a href="https://api.mynotary.fr/files/3f4e598e-99ea-46b9-b038-84118eb5be03" target="_blank" class="tag bg-card text-gray-200 border-white/20 hover:bg-brand hover:text-white hover:border-brand transition-colors cursor-pointer">PDF</a>
-              <a href="https://api.mynotary.fr/files/be211278-d188-4008-a916-28ba7ad1241b" target="_blank" class="tag bg-card text-gray-200 border-white/20 hover:bg-brand hover:text-white hover:border-brand transition-colors cursor-pointer">PDF</a>
-              <a href="https://app.mynotary.fr/operation/35703305/espace-stockage" target="_blank" class="tag bg-brand text-white border-brand hover:bg-white hover:text-dark transition-colors cursor-pointer link-arrow">MyNotary</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- 5 -->
-        <div class="bg-surface border-2 border-white/10 p-4 sm:p-5 card-hover fade-in">
-          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-            <div class="flex-1 min-w-0">
-              <div class="flex items-center gap-2 flex-wrap mb-1">
-                <span class="tag bg-brand/20 text-brand border-brand/50 text-xs">Mandat de vente</span>
-                <span class="text-xs text-gray-400 font-mono">03 fev</span>
-              </div>
-              <h3 class="font-bold text-sm sm:text-base truncate text-white">ANTOINE / Paris 11 / Julia BONNET</h3>
-            </div>
-            <div class="flex items-center gap-2 shrink-0">
-              <a href="https://api.mynotary.fr/files/c414f722-3221-416f-804a-badb49ca4e84" target="_blank" class="tag bg-card text-gray-200 border-white/20 hover:bg-brand hover:text-white hover:border-brand transition-colors cursor-pointer">PDF 1</a>
-              <a href="https://api.mynotary.fr/files/023b91ea-68d5-48a9-a7b1-7bceb0accb05" target="_blank" class="tag bg-card text-gray-200 border-white/20 hover:bg-brand hover:text-white hover:border-brand transition-colors cursor-pointer">PDF 2</a>
-              <span class="text-xs text-gray-400">+4</span>
-              <a href="https://app.mynotary.fr/operation/35641729/espace-stockage" target="_blank" class="tag bg-brand text-white border-brand hover:bg-white hover:text-dark transition-colors cursor-pointer link-arrow">MyNotary</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- 6 -->
-        <div class="bg-surface border-2 border-white/10 p-4 sm:p-5 card-hover fade-in">
-          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-            <div class="flex-1 min-w-0">
-              <div class="flex items-center gap-2 flex-wrap mb-1">
-                <span class="tag bg-brand/20 text-brand border-brand/50 text-xs">Mandat de vente</span>
-                <span class="text-xs text-gray-400 font-mono">03 fev</span>
-              </div>
-              <h3 class="font-bold text-sm sm:text-base truncate text-white">JMSD INVEST / Maison CANAPVILLE / Anne Sophie VAZQUEZ</h3>
-            </div>
-            <div class="flex items-center gap-2 shrink-0">
-              <a href="https://api.mynotary.fr/files/de6a361d-433d-4bd6-b723-8196e587d6a0" target="_blank" class="tag bg-card text-gray-200 border-white/20 hover:bg-brand hover:text-white hover:border-brand transition-colors cursor-pointer">PDF 1</a>
-              <span class="text-xs text-gray-400">+9</span>
-              <a href="https://app.mynotary.fr/operation/35636890/espace-stockage" target="_blank" class="tag bg-brand text-white border-brand hover:bg-white hover:text-dark transition-colors cursor-pointer link-arrow">MyNotary</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- 7 -->
-        <div class="bg-surface border-2 border-white/10 p-4 sm:p-5 card-hover fade-in">
-          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-            <div class="flex-1 min-w-0">
-              <div class="flex items-center gap-2 flex-wrap mb-1">
-                <span class="tag bg-brand/20 text-brand border-brand/50 text-xs">Mandat de vente</span>
-                <span class="text-xs text-gray-400 font-mono">03 fev</span>
-              </div>
-              <h3 class="font-bold text-sm sm:text-base truncate text-white">MAZOYER GRILLET / Clement DAMBELIN</h3>
-            </div>
-            <div class="flex items-center gap-2 shrink-0">
-              <a href="https://api.mynotary.fr/files/e6510d9f-31d3-4ae4-a325-b379264144af" target="_blank" class="tag bg-card text-gray-200 border-white/20 hover:bg-brand hover:text-white hover:border-brand transition-colors cursor-pointer">PDF 1</a>
-              <span class="text-xs text-gray-400">+5</span>
-              <a href="https://app.mynotary.fr/operation/35589321/espace-stockage" target="_blank" class="tag bg-brand text-white border-brand hover:bg-white hover:text-dark transition-colors cursor-pointer link-arrow">MyNotary</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- 8 -->
-        <div class="bg-surface border-2 border-white/10 p-4 sm:p-5 card-hover fade-in">
-          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-            <div class="flex-1 min-w-0">
-              <div class="flex items-center gap-2 flex-wrap mb-1">
-                <span class="tag bg-brand/20 text-brand border-brand/50 text-xs">Mandat de vente</span>
-                <span class="text-xs text-gray-400 font-mono">03 fev</span>
-              </div>
-              <h3 class="font-bold text-sm sm:text-base truncate text-white">BUNGENER Tina</h3>
-            </div>
-            <div class="flex items-center gap-2 shrink-0">
-              <a href="https://api.mynotary.fr/files/3542fc37-282c-417f-bb5d-ddd5e66844b0" target="_blank" class="tag bg-card text-gray-200 border-white/20 hover:bg-brand hover:text-white hover:border-brand transition-colors cursor-pointer">PDF</a>
-              <a href="https://api.mynotary.fr/files/c3e37a3e-6e8a-493b-aaad-61903501e668" target="_blank" class="tag bg-card text-gray-200 border-white/20 hover:bg-brand hover:text-white hover:border-brand transition-colors cursor-pointer">PDF</a>
-              <a href="https://app.mynotary.fr/operation/35559480/espace-stockage" target="_blank" class="tag bg-brand text-white border-brand hover:bg-white hover:text-dark transition-colors cursor-pointer link-arrow">MyNotary</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- 9 - BEKER avec alerte PPE -->
+        <!-- 1 - BEKER - ALERTE PPE -->
         <div class="bg-alert/10 border-2 border-alert p-4 sm:p-5 card-hover fade-in">
           <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
             <div class="flex-1 min-w-0">
               <div class="flex items-center gap-2 flex-wrap mb-1">
                 <span class="tag bg-brand/20 text-brand border-brand/50 text-xs">Mandat de vente</span>
                 <span class="tag bg-alert text-white border-alert text-xs">ALERTE PPE</span>
-                <span class="text-xs text-gray-400 font-mono">03 fev</span>
               </div>
-              <h3 class="font-bold text-sm sm:text-base truncate text-white">BEKER / Rue du Cirque Paris 8</h3>
+              <h3 class="font-bold text-sm sm:text-base truncate text-white">BEKER Nicolas / Rue du Cirque Paris 8</h3>
             </div>
             <div class="flex items-center gap-2 shrink-0">
-              <a href="https://api.mynotary.fr/files/06c5b16a-ba23-4931-8c19-68963abf5729" target="_blank" class="tag bg-card text-gray-200 border-white/20 hover:bg-alert hover:text-white hover:border-alert transition-colors cursor-pointer">PDF</a>
-              <a href="https://api.mynotary.fr/files/270744b2-b0e0-4e8a-87b9-42fc06f2fd70" target="_blank" class="tag bg-card text-gray-200 border-white/20 hover:bg-alert hover:text-white hover:border-alert transition-colors cursor-pointer">PDF</a>
+              <a href="https://api.mynotary.fr/files/20be7f8d-1fe2-4f4c-9f3c-ab3003bbaadd" target="_blank" class="tag bg-card text-gray-200 border-white/20 hover:bg-alert hover:text-white hover:border-alert transition-colors cursor-pointer">PDF</a>
               <a href="https://app.mynotary.fr/operation/35485618/espace-stockage" target="_blank" class="tag bg-brand text-white border-brand hover:bg-white hover:text-dark transition-colors cursor-pointer link-arrow">MyNotary</a>
             </div>
           </div>
         </div>
 
-        <!-- 10 -->
+        <!-- 2 - BELGACEM -->
         <div class="bg-surface border-2 border-white/10 p-4 sm:p-5 card-hover fade-in">
           <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
             <div class="flex-1 min-w-0">
               <div class="flex items-center gap-2 flex-wrap mb-1">
-                <span class="tag bg-accent/20 text-accent border-accent/50 text-xs">Offre d'achat</span>
-                <span class="text-xs text-gray-400 font-mono">04 fev</span>
+                <span class="tag bg-gold/20 text-gold border-gold/50 text-xs">Mandat de recherche</span>
               </div>
-              <h3 class="font-bold text-sm sm:text-base truncate text-white">TACK / Baptiste DUBUC</h3>
+              <h3 class="font-bold text-sm sm:text-base truncate text-white">BELGACEM Setiti</h3>
             </div>
             <div class="flex items-center gap-2 shrink-0">
-              <a href="https://api.mynotary.fr/files/452c2bd5-05f0-4de3-ae04-d0592c17d2d7" target="_blank" class="tag bg-card text-gray-200 border-white/20 hover:bg-brand hover:text-white hover:border-brand transition-colors cursor-pointer">PDF 1</a>
-              <span class="text-xs text-gray-400">+2</span>
-              <a href="https://app.mynotary.fr/operation/35711550/espace-stockage" target="_blank" class="tag bg-brand text-white border-brand hover:bg-white hover:text-dark transition-colors cursor-pointer link-arrow">MyNotary</a>
+              <a href="https://api.mynotary.fr/files/8d07c99f-6ea0-4503-b73c-206b5acb7b46" target="_blank" class="tag bg-card text-gray-200 border-white/20 hover:bg-brand hover:text-white hover:border-brand transition-colors cursor-pointer">PDF</a>
+              <a href="https://app.mynotary.fr/operation/35489496/espace-stockage" target="_blank" class="tag bg-brand text-white border-brand hover:bg-white hover:text-dark transition-colors cursor-pointer link-arrow">MyNotary</a>
             </div>
           </div>
         </div>
 
-        <!-- 11 -->
+        <!-- 3 - DENAES -->
         <div class="bg-surface border-2 border-white/10 p-4 sm:p-5 card-hover fade-in">
           <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
             <div class="flex-1 min-w-0">
               <div class="flex items-center gap-2 flex-wrap mb-1">
                 <span class="tag bg-brand/20 text-brand border-brand/50 text-xs">Mandat de vente</span>
-                <span class="text-xs text-gray-400 font-mono">04 fev</span>
               </div>
-              <h3 class="font-bold text-sm sm:text-base truncate text-white">SCI Phocea Mouflon</h3>
+              <h3 class="font-bold text-sm sm:text-base truncate text-white">DENAES Arthur / Ferney-Voltaire</h3>
             </div>
             <div class="flex items-center gap-2 shrink-0">
-              <a href="https://api.mynotary.fr/files/a122d5fd-9206-415b-9cb0-bbcfa8029e90" target="_blank" class="tag bg-card text-gray-200 border-white/20 hover:bg-brand hover:text-white hover:border-brand transition-colors cursor-pointer">PDF</a>
-              <a href="https://api.mynotary.fr/files/b1108532-8223-401a-8026-1e4ba9abac92" target="_blank" class="tag bg-card text-gray-200 border-white/20 hover:bg-brand hover:text-white hover:border-brand transition-colors cursor-pointer">PDF</a>
-              <a href="https://app.mynotary.fr/operation/35373737/espace-stockage" target="_blank" class="tag bg-brand text-white border-brand hover:bg-white hover:text-dark transition-colors cursor-pointer link-arrow">MyNotary</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- 12 -->
-        <div class="bg-surface border-2 border-white/10 p-4 sm:p-5 card-hover fade-in">
-          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-            <div class="flex-1 min-w-0">
-              <div class="flex items-center gap-2 flex-wrap mb-1">
-                <span class="tag bg-brand/20 text-brand border-brand/50 text-xs">Mandat de vente</span>
-                <span class="text-xs text-gray-400 font-mono">05 fev</span>
-              </div>
-              <h3 class="font-bold text-sm sm:text-base truncate text-white">3PELLOUTIER / Boulogne-Billancourt / Julia BONNET</h3>
-            </div>
-            <div class="flex items-center gap-2 shrink-0">
-              <a href="https://api.mynotary.fr/files/98c0a7da-0412-48f1-b49b-61ebec853df8" target="_blank" class="tag bg-card text-gray-200 border-white/20 hover:bg-brand hover:text-white hover:border-brand transition-colors cursor-pointer">PDF</a>
-              <a href="https://app.mynotary.fr/operation/35557369/espace-stockage" target="_blank" class="tag bg-brand text-white border-brand hover:bg-white hover:text-dark transition-colors cursor-pointer link-arrow">MyNotary</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- 13 -->
-        <div class="bg-surface border-2 border-white/10 p-4 sm:p-5 card-hover fade-in">
-          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-            <div class="flex-1 min-w-0">
-              <div class="flex items-center gap-2 flex-wrap mb-1">
-                <span class="tag bg-brand/20 text-brand border-brand/50 text-xs">Mandat de vente</span>
-                <span class="text-xs text-gray-400 font-mono">05 fev</span>
-              </div>
-              <h3 class="font-bold text-sm sm:text-base truncate text-white">DENAES / Ferney-Voltaire / Karine PENARANDA</h3>
-            </div>
-            <div class="flex items-center gap-2 shrink-0">
-              <a href="https://api.mynotary.fr/files/bb87a8ad-a103-4d1f-bba8-dcc849617f1e" target="_blank" class="tag bg-card text-gray-200 border-white/20 hover:bg-brand hover:text-white hover:border-brand transition-colors cursor-pointer">PDF</a>
-              <a href="https://api.mynotary.fr/files/c0716c40-843c-401b-bb41-d0d7884b63bb" target="_blank" class="tag bg-card text-gray-200 border-white/20 hover:bg-brand hover:text-white hover:border-brand transition-colors cursor-pointer">PDF</a>
+              <a href="https://api.mynotary.fr/files/74c9772a-6e50-458e-8f77-9c4ebe4f6455" target="_blank" class="tag bg-card text-gray-200 border-white/20 hover:bg-brand hover:text-white hover:border-brand transition-colors cursor-pointer">PDF</a>
               <a href="https://app.mynotary.fr/operation/35555926/espace-stockage" target="_blank" class="tag bg-brand text-white border-brand hover:bg-white hover:text-dark transition-colors cursor-pointer link-arrow">MyNotary</a>
             </div>
           </div>
         </div>
 
-        <!-- 14 -->
-        <div class="bg-surface border-2 border-white/10 p-4 sm:p-5 card-hover fade-in">
-          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-            <div class="flex-1 min-w-0">
-              <div class="flex items-center gap-2 flex-wrap mb-1">
-                <span class="tag bg-accent/20 text-accent border-accent/50 text-xs">Offre d'achat</span>
-                <span class="text-xs text-gray-400 font-mono">06 fev</span>
-              </div>
-              <h3 class="font-bold text-sm sm:text-base truncate text-white">PARIS / SAMY ALEXANDRE</h3>
-            </div>
-            <div class="flex items-center gap-2 shrink-0">
-              <a href="https://api.mynotary.fr/files/fd3eb8dd-bb3a-4ccd-8571-a24def9afc56" target="_blank" class="tag bg-card text-gray-200 border-white/20 hover:bg-brand hover:text-white hover:border-brand transition-colors cursor-pointer">PDF</a>
-              <a href="https://app.mynotary.fr/operation/35710601/espace-stockage" target="_blank" class="tag bg-brand text-white border-brand hover:bg-white hover:text-dark transition-colors cursor-pointer link-arrow">MyNotary</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- 15 -->
+        <!-- 4 - 3PELLOUTIER -->
         <div class="bg-surface border-2 border-white/10 p-4 sm:p-5 card-hover fade-in">
           <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
             <div class="flex-1 min-w-0">
               <div class="flex items-center gap-2 flex-wrap mb-1">
                 <span class="tag bg-brand/20 text-brand border-brand/50 text-xs">Mandat de vente</span>
-                <span class="text-xs text-gray-400 font-mono">06 fev</span>
               </div>
-              <h3 class="font-bold text-sm sm:text-base truncate text-white">BOTELLA / Valescure, Saint-Raphael</h3>
+              <h3 class="font-bold text-sm sm:text-base truncate text-white">3PELLOUTIER (SCI) / Boulogne-Billancourt</h3>
             </div>
             <div class="flex items-center gap-2 shrink-0">
-              <a href="https://api.mynotary.fr/files/06b2c233-2b2c-4b3e-813a-20cdaecee384" target="_blank" class="tag bg-card text-gray-200 border-white/20 hover:bg-brand hover:text-white hover:border-brand transition-colors cursor-pointer">PDF 1</a>
-              <span class="text-xs text-gray-400">+2</span>
+              <a href="https://api.mynotary.fr/files/9ac99db2-c149-4398-a673-294e0854a424" target="_blank" class="tag bg-card text-gray-200 border-white/20 hover:bg-brand hover:text-white hover:border-brand transition-colors cursor-pointer">PDF</a>
+              <a href="https://app.mynotary.fr/operation/35557369/espace-stockage" target="_blank" class="tag bg-brand text-white border-brand hover:bg-white hover:text-dark transition-colors cursor-pointer link-arrow">MyNotary</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5 - BUNGENER / VIATEUR -->
+        <div class="bg-surface border-2 border-white/10 p-4 sm:p-5 card-hover fade-in">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+            <div class="flex-1 min-w-0">
+              <div class="flex items-center gap-2 flex-wrap mb-1">
+                <span class="tag bg-brand/20 text-brand border-brand/50 text-xs">Mandat de vente</span>
+              </div>
+              <h3 class="font-bold text-sm sm:text-base truncate text-white">BUNGENER Tina / VIATEUR Alexandre</h3>
+            </div>
+            <div class="flex items-center gap-2 shrink-0">
+              <a href="https://api.mynotary.fr/files/9c5d7ec7-126a-417b-b1cd-834d52d22093" target="_blank" class="tag bg-card text-gray-200 border-white/20 hover:bg-brand hover:text-white hover:border-brand transition-colors cursor-pointer">PDF</a>
+              <a href="https://api.mynotary.fr/files/3892c110-6a24-4a0f-be48-77c4e029221e" target="_blank" class="tag bg-card text-gray-200 border-white/20 hover:bg-brand hover:text-white hover:border-brand transition-colors cursor-pointer">PDF</a>
+              <a href="https://app.mynotary.fr/operation/35559480/espace-stockage" target="_blank" class="tag bg-brand text-white border-brand hover:bg-white hover:text-dark transition-colors cursor-pointer link-arrow">MyNotary</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6 - DIARRA -->
+        <div class="bg-surface border-2 border-white/10 p-4 sm:p-5 card-hover fade-in">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+            <div class="flex-1 min-w-0">
+              <div class="flex items-center gap-2 flex-wrap mb-1">
+                <span class="tag bg-brand/20 text-brand border-brand/50 text-xs">Mandat de vente</span>
+              </div>
+              <h3 class="font-bold text-sm sm:text-base truncate text-white">DIARRA - BERTE Sanaba / DIARRA Ibrahima</h3>
+            </div>
+            <div class="flex items-center gap-2 shrink-0">
+              <a href="https://api.mynotary.fr/files/674118fd-db19-4270-b94c-c6585b8c739e" target="_blank" class="tag bg-card text-gray-200 border-white/20 hover:bg-brand hover:text-white hover:border-brand transition-colors cursor-pointer">PDF</a>
+              <a href="https://api.mynotary.fr/files/52cb645b-00ea-406c-b6e0-db5090990e8a" target="_blank" class="tag bg-card text-gray-200 border-white/20 hover:bg-brand hover:text-white hover:border-brand transition-colors cursor-pointer">PDF</a>
+              <a href="https://app.mynotary.fr/operation/35566620/espace-stockage" target="_blank" class="tag bg-brand text-white border-brand hover:bg-white hover:text-dark transition-colors cursor-pointer link-arrow">MyNotary</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7 - BOTELLA / MON WEN PIN -->
+        <div class="bg-surface border-2 border-white/10 p-4 sm:p-5 card-hover fade-in">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+            <div class="flex-1 min-w-0">
+              <div class="flex items-center gap-2 flex-wrap mb-1">
+                <span class="tag bg-brand/20 text-brand border-brand/50 text-xs">Mandat de vente</span>
+              </div>
+              <h3 class="font-bold text-sm sm:text-base truncate text-white">BOTELLA Eric / MON WEN PIN Vanessa / Saint-Raphael</h3>
+            </div>
+            <div class="flex items-center gap-2 shrink-0">
+              <a href="https://api.mynotary.fr/files/d25f4f63-0cef-4031-aa8a-2efb7a31497b" target="_blank" class="tag bg-card text-gray-200 border-white/20 hover:bg-brand hover:text-white hover:border-brand transition-colors cursor-pointer">PDF</a>
+              <a href="https://api.mynotary.fr/files/cb4a0d1f-a26d-4267-9bf8-fc9d51ea3da2" target="_blank" class="tag bg-card text-gray-200 border-white/20 hover:bg-brand hover:text-white hover:border-brand transition-colors cursor-pointer">PDF</a>
               <a href="https://app.mynotary.fr/operation/35581851/espace-stockage" target="_blank" class="tag bg-brand text-white border-brand hover:bg-white hover:text-dark transition-colors cursor-pointer link-arrow">MyNotary</a>
             </div>
           </div>
         </div>
 
-        <!-- 16 -->
+        <!-- 8 - MAZOYER GRILLET / ALZAMEL -->
         <div class="bg-surface border-2 border-white/10 p-4 sm:p-5 card-hover fade-in">
           <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
             <div class="flex-1 min-w-0">
               <div class="flex items-center gap-2 flex-wrap mb-1">
                 <span class="tag bg-brand/20 text-brand border-brand/50 text-xs">Mandat de vente</span>
-                <span class="text-xs text-gray-400 font-mono">07 fev</span>
               </div>
-              <h3 class="font-bold text-sm sm:text-base truncate text-white">HUON-DUMENTAT / Marly-le-Roi / Romain GOUBELY</h3>
+              <h3 class="font-bold text-sm sm:text-base truncate text-white">MAZOYER GRILLET / GRILLET / ALZAMEL</h3>
             </div>
             <div class="flex items-center gap-2 shrink-0">
-              <a href="https://api.mynotary.fr/files/f01e14d8-43c8-4f40-80bc-b3057444341c" target="_blank" class="tag bg-card text-gray-200 border-white/20 hover:bg-brand hover:text-white hover:border-brand transition-colors cursor-pointer">PDF 1</a>
-              <span class="text-xs text-gray-400">+3</span>
-              <a href="https://app.mynotary.fr/operation/35721061/espace-stockage" target="_blank" class="tag bg-brand text-white border-brand hover:bg-white hover:text-dark transition-colors cursor-pointer link-arrow">MyNotary</a>
+              <a href="https://api.mynotary.fr/files/dcce2386-9fe1-4c40-9fad-2200978f70cd" target="_blank" class="tag bg-card text-gray-200 border-white/20 hover:bg-brand hover:text-white hover:border-brand transition-colors cursor-pointer">PDF</a>
+              <a href="https://api.mynotary.fr/files/d2eacf2d-f680-4481-8539-bb5e28a081fd" target="_blank" class="tag bg-card text-gray-200 border-white/20 hover:bg-brand hover:text-white hover:border-brand transition-colors cursor-pointer">PDF</a>
+              <a href="https://api.mynotary.fr/files/54c1b2ed-822e-4c98-9b27-12c4955ead70" target="_blank" class="tag bg-card text-gray-200 border-white/20 hover:bg-brand hover:text-white hover:border-brand transition-colors cursor-pointer">PDF</a>
+              <a href="https://app.mynotary.fr/operation/35589321/espace-stockage" target="_blank" class="tag bg-brand text-white border-brand hover:bg-white hover:text-dark transition-colors cursor-pointer link-arrow">MyNotary</a>
             </div>
           </div>
         </div>
 
-        <!-- 17 -->
+        <!-- 9 - COCQUET / RAQUILLET -->
         <div class="bg-surface border-2 border-white/10 p-4 sm:p-5 card-hover fade-in">
           <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
             <div class="flex-1 min-w-0">
               <div class="flex items-center gap-2 flex-wrap mb-1">
                 <span class="tag bg-brand/20 text-brand border-brand/50 text-xs">Mandat de vente</span>
-                <span class="text-xs text-gray-400 font-mono">08 fev</span>
               </div>
-              <h3 class="font-bold text-sm sm:text-base truncate text-white">BERVELT / Mandat 3270</h3>
+              <h3 class="font-bold text-sm sm:text-base truncate text-white">COCQUET Stephanie / RAQUILLET Romain / Paris 13</h3>
             </div>
             <div class="flex items-center gap-2 shrink-0">
-              <a href="https://api.mynotary.fr/files/b816512a-5cc9-47fa-99f3-5d4a8b7d1274" target="_blank" class="tag bg-card text-gray-200 border-white/20 hover:bg-brand hover:text-white hover:border-brand transition-colors cursor-pointer">PDF</a>
-              <a href="https://api.mynotary.fr/files/c31ec85c-5739-4bac-96f3-6f6e971febe9" target="_blank" class="tag bg-card text-gray-200 border-white/20 hover:bg-brand hover:text-white hover:border-brand transition-colors cursor-pointer">PDF</a>
-              <a href="https://app.mynotary.fr/operation/36803550/espace-stockage" target="_blank" class="tag bg-brand text-white border-brand hover:bg-white hover:text-dark transition-colors cursor-pointer link-arrow">MyNotary</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- 18 - MATON avec alerte PPE -->
-        <div class="bg-alert/10 border-2 border-alert p-4 sm:p-5 card-hover fade-in">
-          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-            <div class="flex-1 min-w-0">
-              <div class="flex items-center gap-2 flex-wrap mb-1">
-                <span class="tag bg-brand/20 text-brand border-brand/50 text-xs">Mandat de vente</span>
-                <span class="tag bg-alert text-white border-alert text-xs">ALERTE PPE</span>
-                <span class="text-xs text-gray-400 font-mono">09 fev</span>
-              </div>
-              <h3 class="font-bold text-sm sm:text-base truncate text-white">BAILLY / Courbevoie / Benoit MATON</h3>
-            </div>
-            <div class="flex items-center gap-2 shrink-0">
-              <a href="https://api.mynotary.fr/files/e62cfb0a-42de-4629-a862-f0ed5ca03d8d" target="_blank" class="tag bg-card text-gray-200 border-white/20 hover:bg-alert hover:text-white hover:border-alert transition-colors cursor-pointer">PDF</a>
-              <a href="https://api.mynotary.fr/files/5ac41186-4308-41b4-85b7-7905168f090c" target="_blank" class="tag bg-card text-gray-200 border-white/20 hover:bg-alert hover:text-white hover:border-alert transition-colors cursor-pointer">PDF</a>
-              <a href="https://app.mynotary.fr/operation/35755055/espace-stockage" target="_blank" class="tag bg-brand text-white border-brand hover:bg-white hover:text-dark transition-colors cursor-pointer link-arrow">MyNotary</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- 19 -->
-        <div class="bg-surface border-2 border-white/10 p-4 sm:p-5 card-hover fade-in">
-          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-            <div class="flex-1 min-w-0">
-              <div class="flex items-center gap-2 flex-wrap mb-1">
-                <span class="tag bg-brand/20 text-brand border-brand/50 text-xs">Mandat de vente</span>
-                <span class="text-xs text-gray-400 font-mono">09 fev</span>
-              </div>
-              <h3 class="font-bold text-sm sm:text-base truncate text-white">CARROT / Jujurieux / Gerald CHATEL</h3>
-            </div>
-            <div class="flex items-center gap-2 shrink-0">
-              <a href="https://api.mynotary.fr/files/f519343a-b34f-48ac-87ba-473579053376" target="_blank" class="tag bg-card text-gray-200 border-white/20 hover:bg-brand hover:text-white hover:border-brand transition-colors cursor-pointer">PDF</a>
-              <a href="https://app.mynotary.fr/operation/35666137/espace-stockage" target="_blank" class="tag bg-brand text-white border-brand hover:bg-white hover:text-dark transition-colors cursor-pointer link-arrow">MyNotary</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- 20 -->
-        <div class="bg-surface border-2 border-white/10 p-4 sm:p-5 card-hover fade-in">
-          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-            <div class="flex-1 min-w-0">
-              <div class="flex items-center gap-2 flex-wrap mb-1">
-                <span class="tag bg-brand/20 text-brand border-brand/50 text-xs">Mandat de vente</span>
-                <span class="text-xs text-gray-400 font-mono">09 fev</span>
-              </div>
-              <h3 class="font-bold text-sm sm:text-base truncate text-white">FILSKOV / Cannes / Emilie CATINELLA</h3>
-            </div>
-            <div class="flex items-center gap-2 shrink-0">
-              <a href="https://api.mynotary.fr/files/651bd03d-09d7-4dde-81ff-a470ecc52d6c" target="_blank" class="tag bg-card text-gray-200 border-white/20 hover:bg-brand hover:text-white hover:border-brand transition-colors cursor-pointer">PDF</a>
-              <a href="https://api.mynotary.fr/files/a95034ae-1852-46a3-9c2c-6ef5feaa6ad2" target="_blank" class="tag bg-card text-gray-200 border-white/20 hover:bg-brand hover:text-white hover:border-brand transition-colors cursor-pointer">PDF</a>
-              <a href="https://app.mynotary.fr/operation/35609903/espace-stockage" target="_blank" class="tag bg-brand text-white border-brand hover:bg-white hover:text-dark transition-colors cursor-pointer link-arrow">MyNotary</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- 21 -->
-        <div class="bg-surface border-2 border-white/10 p-4 sm:p-5 card-hover fade-in">
-          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-            <div class="flex-1 min-w-0">
-              <div class="flex items-center gap-2 flex-wrap mb-1">
-                <span class="tag bg-brand/20 text-brand border-brand/50 text-xs">Mandat de vente</span>
-                <span class="text-xs text-gray-400 font-mono">10 fev</span>
-              </div>
-              <h3 class="font-bold text-sm sm:text-base truncate text-white">KERJEAN / Saint-Malo / Florence SEVESTRE</h3>
-            </div>
-            <div class="flex items-center gap-2 shrink-0">
-              <a href="https://api.mynotary.fr/files/45b0fe0a-0ebb-42ef-bc70-bb6ede77be0b" target="_blank" class="tag bg-card text-gray-200 border-white/20 hover:bg-brand hover:text-white hover:border-brand transition-colors cursor-pointer">PDF 1</a>
-              <span class="text-xs text-gray-400">+2</span>
-              <a href="https://app.mynotary.fr/operation/36958747/espace-stockage" target="_blank" class="tag bg-brand text-white border-brand hover:bg-white hover:text-dark transition-colors cursor-pointer link-arrow">MyNotary</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- 22 - MATON alerte -->
-        <div class="bg-alert/10 border-2 border-alert p-4 sm:p-5 card-hover fade-in">
-          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-            <div class="flex-1 min-w-0">
-              <div class="flex items-center gap-2 flex-wrap mb-1">
-                <span class="tag bg-brand/20 text-brand border-brand/50 text-xs">Mandat de vente</span>
-                <span class="tag bg-alert text-white border-alert text-xs">ALERTE PPE</span>
-                <span class="text-xs text-gray-400 font-mono">10 fev</span>
-              </div>
-              <h3 class="font-bold text-sm sm:text-base truncate text-white">FRANCE CAPITALE / Benoit MATON</h3>
-            </div>
-            <div class="flex items-center gap-2 shrink-0">
-              <a href="https://api.mynotary.fr/files/52049002-67e3-4fab-9d07-20ef2cfd0058" target="_blank" class="tag bg-card text-gray-200 border-white/20 hover:bg-alert hover:text-white hover:border-alert transition-colors cursor-pointer">PDF</a>
-              <a href="https://app.mynotary.fr/operation/36902211/espace-stockage" target="_blank" class="tag bg-brand text-white border-brand hover:bg-white hover:text-dark transition-colors cursor-pointer link-arrow">MyNotary</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- 23 - MATON alerte -->
-        <div class="bg-alert/10 border-2 border-alert p-4 sm:p-5 card-hover fade-in">
-          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-            <div class="flex-1 min-w-0">
-              <div class="flex items-center gap-2 flex-wrap mb-1">
-                <span class="tag bg-brand/20 text-brand border-brand/50 text-xs">Mandat de vente</span>
-                <span class="tag bg-alert text-white border-alert text-xs">ALERTE PPE</span>
-                <span class="text-xs text-gray-400 font-mono">10 fev</span>
-              </div>
-              <h3 class="font-bold text-sm sm:text-base truncate text-white">LAIR / Paris 10 / Benoit MATON</h3>
-            </div>
-            <div class="flex items-center gap-2 shrink-0">
-              <a href="https://api.mynotary.fr/files/28b69e12-f8fb-441e-a3b3-6ce9a80db70e" target="_blank" class="tag bg-card text-gray-200 border-white/20 hover:bg-alert hover:text-white hover:border-alert transition-colors cursor-pointer">PDF</a>
-              <a href="https://api.mynotary.fr/files/1c836b83-d523-43ca-973d-f161a0ba588e" target="_blank" class="tag bg-card text-gray-200 border-white/20 hover:bg-alert hover:text-white hover:border-alert transition-colors cursor-pointer">PDF</a>
-              <a href="https://app.mynotary.fr/operation/35771688/espace-stockage" target="_blank" class="tag bg-brand text-white border-brand hover:bg-white hover:text-dark transition-colors cursor-pointer link-arrow">MyNotary</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- 24 -->
-        <div class="bg-surface border-2 border-white/10 p-4 sm:p-5 card-hover fade-in">
-          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-            <div class="flex-1 min-w-0">
-              <div class="flex items-center gap-2 flex-wrap mb-1">
-                <span class="tag bg-brand/20 text-brand border-brand/50 text-xs">Mandat de vente</span>
-                <span class="text-xs text-gray-400 font-mono">11 fev</span>
-              </div>
-              <h3 class="font-bold text-sm sm:text-base truncate text-white">LEMAISTRE / Benerville / Gregory VALLEE</h3>
-            </div>
-            <div class="flex items-center gap-2 shrink-0">
-              <a href="https://api.mynotary.fr/files/8c440878-e5b9-4525-a4b0-5368380e562b" target="_blank" class="tag bg-card text-gray-200 border-white/20 hover:bg-brand hover:text-white hover:border-brand transition-colors cursor-pointer">PDF 1</a>
-              <span class="text-xs text-gray-400">+2</span>
-              <a href="https://app.mynotary.fr/operation/36797391/espace-stockage" target="_blank" class="tag bg-brand text-white border-brand hover:bg-white hover:text-dark transition-colors cursor-pointer link-arrow">MyNotary</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- 25 -->
-        <div class="bg-surface border-2 border-white/10 p-4 sm:p-5 card-hover fade-in">
-          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-            <div class="flex-1 min-w-0">
-              <div class="flex items-center gap-2 flex-wrap mb-1">
-                <span class="tag bg-brand/20 text-brand border-brand/50 text-xs">Mandat de vente</span>
-                <span class="text-xs text-gray-400 font-mono">11 fev</span>
-              </div>
-              <h3 class="font-bold text-sm sm:text-base truncate text-white">SCI DE LA LAUVE / Saint-Raphael / Stephane GAMBIRASIO</h3>
-            </div>
-            <div class="flex items-center gap-2 shrink-0">
-              <a href="https://api.mynotary.fr/files/54c6803e-1cd6-498e-9fd6-98112ab5c121" target="_blank" class="tag bg-card text-gray-200 border-white/20 hover:bg-brand hover:text-white hover:border-brand transition-colors cursor-pointer">PDF</a>
-              <a href="https://app.mynotary.fr/operation/35803674/espace-stockage" target="_blank" class="tag bg-brand text-white border-brand hover:bg-white hover:text-dark transition-colors cursor-pointer link-arrow">MyNotary</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- 26 -->
-        <div class="bg-surface border-2 border-white/10 p-4 sm:p-5 card-hover fade-in">
-          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-            <div class="flex-1 min-w-0">
-              <div class="flex items-center gap-2 flex-wrap mb-1">
-                <span class="tag bg-brand/20 text-brand border-brand/50 text-xs">Mandat de vente</span>
-                <span class="text-xs text-gray-400 font-mono">11 fev</span>
-              </div>
-              <h3 class="font-bold text-sm sm:text-base truncate text-white">COCQUET-RAQUILLET / Paris 13 / Pierre-Axel BASTIEGE</h3>
-            </div>
-            <div class="flex items-center gap-2 shrink-0">
-              <a href="https://api.mynotary.fr/files/f1c1d858-6747-4aa0-8d5c-3eb78238a3eb" target="_blank" class="tag bg-card text-gray-200 border-white/20 hover:bg-brand hover:text-white hover:border-brand transition-colors cursor-pointer">PDF 1</a>
-              <span class="text-xs text-gray-400">+2</span>
+              <a href="https://api.mynotary.fr/files/5d60b02d-0e5c-43b6-be6e-40640a628ffb" target="_blank" class="tag bg-card text-gray-200 border-white/20 hover:bg-brand hover:text-white hover:border-brand transition-colors cursor-pointer">PDF</a>
+              <a href="https://api.mynotary.fr/files/8a72a6cd-1e03-4515-9468-755fc5e105c6" target="_blank" class="tag bg-card text-gray-200 border-white/20 hover:bg-brand hover:text-white hover:border-brand transition-colors cursor-pointer">PDF</a>
               <a href="https://app.mynotary.fr/operation/35599853/espace-stockage" target="_blank" class="tag bg-brand text-white border-brand hover:bg-white hover:text-dark transition-colors cursor-pointer link-arrow">MyNotary</a>
             </div>
           </div>
         </div>
 
-        <!-- 27 -->
+        <!-- 10 - LELIEVRE / DAHEUILLE - ALERTE PPE -->
+        <div class="bg-alert/10 border-2 border-alert p-4 sm:p-5 card-hover fade-in">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+            <div class="flex-1 min-w-0">
+              <div class="flex items-center gap-2 flex-wrap mb-1">
+                <span class="tag bg-accent/20 text-accent border-accent/50 text-xs">Offre d'achat</span>
+                <span class="tag bg-alert text-white border-alert text-xs">ALERTE PPE</span>
+              </div>
+              <h3 class="font-bold text-sm sm:text-base truncate text-white">LELIEVRE Laure / DAHEUILLE Cyril / Loire-Authion</h3>
+            </div>
+            <div class="flex items-center gap-2 shrink-0">
+              <a href="https://api.mynotary.fr/files/7f084bc6-c213-418a-8f60-4cd7f8691f61" target="_blank" class="tag bg-card text-gray-200 border-white/20 hover:bg-alert hover:text-white hover:border-alert transition-colors cursor-pointer">PDF</a>
+              <a href="https://api.mynotary.fr/files/21817216-fb57-426d-a708-124058d6d5e8" target="_blank" class="tag bg-card text-gray-200 border-white/20 hover:bg-alert hover:text-white hover:border-alert transition-colors cursor-pointer">PDF</a>
+              <a href="https://app.mynotary.fr/operation/35601763/espace-stockage" target="_blank" class="tag bg-brand text-white border-brand hover:bg-white hover:text-dark transition-colors cursor-pointer link-arrow">MyNotary</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 11 - FILSKOV -->
         <div class="bg-surface border-2 border-white/10 p-4 sm:p-5 card-hover fade-in">
           <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
             <div class="flex-1 min-w-0">
               <div class="flex items-center gap-2 flex-wrap mb-1">
                 <span class="tag bg-brand/20 text-brand border-brand/50 text-xs">Mandat de vente</span>
-                <span class="text-xs text-gray-400 font-mono">12 fev</span>
               </div>
-              <h3 class="font-bold text-sm sm:text-base truncate text-white">LEVY / Asnieres-sur-Seine / Benoit MATON</h3>
+              <h3 class="font-bold text-sm sm:text-base truncate text-white">FILSKOV Joy / Cannes</h3>
             </div>
             <div class="flex items-center gap-2 shrink-0">
-              <a href="https://api.mynotary.fr/files/cbfefd68-704b-44a0-a326-e03ce3e96574" target="_blank" class="tag bg-card text-gray-200 border-white/20 hover:bg-brand hover:text-white hover:border-brand transition-colors cursor-pointer">PDF 1</a>
-              <span class="text-xs text-gray-400">+2</span>
-              <a href="https://app.mynotary.fr/operation/36957622/espace-stockage" target="_blank" class="tag bg-brand text-white border-brand hover:bg-white hover:text-dark transition-colors cursor-pointer link-arrow">MyNotary</a>
+              <a href="https://api.mynotary.fr/files/a157e1c4-d321-4a6a-ac21-b052e54ba456" target="_blank" class="tag bg-card text-gray-200 border-white/20 hover:bg-brand hover:text-white hover:border-brand transition-colors cursor-pointer">PDF</a>
+              <a href="https://app.mynotary.fr/operation/35609903/espace-stockage" target="_blank" class="tag bg-brand text-white border-brand hover:bg-white hover:text-dark transition-colors cursor-pointer link-arrow">MyNotary</a>
             </div>
           </div>
         </div>
 
-        <!-- 28 -->
+        <!-- 12 - JMSD INVEST -->
+        <div class="bg-surface border-2 border-white/10 p-4 sm:p-5 card-hover fade-in">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+            <div class="flex-1 min-w-0">
+              <div class="flex items-center gap-2 flex-wrap mb-1">
+                <span class="tag bg-brand/20 text-brand border-brand/50 text-xs">Mandat de vente</span>
+              </div>
+              <h3 class="font-bold text-sm sm:text-base truncate text-white">JMSD INVEST (SCI) / Maison Canapville</h3>
+            </div>
+            <div class="flex items-center gap-2 shrink-0">
+              <a href="https://api.mynotary.fr/files/c254f85d-20e5-4857-b873-8090f8c773ec" target="_blank" class="tag bg-card text-gray-200 border-white/20 hover:bg-brand hover:text-white hover:border-brand transition-colors cursor-pointer">PDF</a>
+              <a href="https://app.mynotary.fr/operation/35636890/espace-stockage" target="_blank" class="tag bg-brand text-white border-brand hover:bg-white hover:text-dark transition-colors cursor-pointer link-arrow">MyNotary</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 13 - ANTOINE -->
+        <div class="bg-surface border-2 border-white/10 p-4 sm:p-5 card-hover fade-in">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+            <div class="flex-1 min-w-0">
+              <div class="flex items-center gap-2 flex-wrap mb-1">
+                <span class="tag bg-brand/20 text-brand border-brand/50 text-xs">Mandat de vente</span>
+              </div>
+              <h3 class="font-bold text-sm sm:text-base truncate text-white">ANTOINE Caroline / Paris 11</h3>
+            </div>
+            <div class="flex items-center gap-2 shrink-0">
+              <a href="https://api.mynotary.fr/files/30d50a9c-cc64-438e-9cf0-18bd6817dbc4" target="_blank" class="tag bg-card text-gray-200 border-white/20 hover:bg-brand hover:text-white hover:border-brand transition-colors cursor-pointer">PDF</a>
+              <a href="https://app.mynotary.fr/operation/35641729/espace-stockage" target="_blank" class="tag bg-brand text-white border-brand hover:bg-white hover:text-dark transition-colors cursor-pointer link-arrow">MyNotary</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 14 - CARROT -->
+        <div class="bg-surface border-2 border-white/10 p-4 sm:p-5 card-hover fade-in">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+            <div class="flex-1 min-w-0">
+              <div class="flex items-center gap-2 flex-wrap mb-1">
+                <span class="tag bg-brand/20 text-brand border-brand/50 text-xs">Mandat de vente</span>
+              </div>
+              <h3 class="font-bold text-sm sm:text-base truncate text-white">CARROT Jocelyn / CARROT Raquel / Jujurieux</h3>
+            </div>
+            <div class="flex items-center gap-2 shrink-0">
+              <a href="https://api.mynotary.fr/files/5c148c13-7212-4978-99fe-519f83370658" target="_blank" class="tag bg-card text-gray-200 border-white/20 hover:bg-brand hover:text-white hover:border-brand transition-colors cursor-pointer">PDF</a>
+              <a href="https://api.mynotary.fr/files/814ee884-7cd6-4d70-b634-91042b066013" target="_blank" class="tag bg-card text-gray-200 border-white/20 hover:bg-brand hover:text-white hover:border-brand transition-colors cursor-pointer">PDF</a>
+              <a href="https://app.mynotary.fr/operation/35666137/espace-stockage" target="_blank" class="tag bg-brand text-white border-brand hover:bg-white hover:text-dark transition-colors cursor-pointer link-arrow">MyNotary</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 15 - GILLIAR / ALBONI -->
         <div class="bg-surface border-2 border-white/10 p-4 sm:p-5 card-hover fade-in">
           <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
             <div class="flex-1 min-w-0">
               <div class="flex items-center gap-2 flex-wrap mb-1">
                 <span class="tag bg-accent/20 text-accent border-accent/50 text-xs">Offre d'achat</span>
-                <span class="text-xs text-gray-400 font-mono">12 fev</span>
               </div>
-              <h3 class="font-bold text-sm sm:text-base truncate text-white">DE PERTHUIS / VOS / Cuy-Saint-Fiacre / Baptiste DUBUC</h3>
+              <h3 class="font-bold text-sm sm:text-base truncate text-white">GILLIAR Erika / GILLIAR James / ALBONI Alexandre</h3>
             </div>
             <div class="flex items-center gap-2 shrink-0">
-              <a href="https://api.mynotary.fr/files/d162a943-7512-49e3-98b5-8f5934302374" target="_blank" class="tag bg-card text-gray-200 border-white/20 hover:bg-brand hover:text-white hover:border-brand transition-colors cursor-pointer">PDF 1</a>
-              <span class="text-xs text-gray-400">+3</span>
+              <a href="https://api.mynotary.fr/files/61464102-12c2-4e57-81ff-76f31d19f2c4" target="_blank" class="tag bg-card text-gray-200 border-white/20 hover:bg-brand hover:text-white hover:border-brand transition-colors cursor-pointer">PDF</a>
+              <a href="https://api.mynotary.fr/files/99fcb69a-35c2-4946-915c-e144abfc0d06" target="_blank" class="tag bg-card text-gray-200 border-white/20 hover:bg-brand hover:text-white hover:border-brand transition-colors cursor-pointer">PDF</a>
+              <a href="https://api.mynotary.fr/files/bb79a6ae-d2be-464e-93f6-8be228073df7" target="_blank" class="tag bg-card text-gray-200 border-white/20 hover:bg-brand hover:text-white hover:border-brand transition-colors cursor-pointer">PDF</a>
+              <a href="https://app.mynotary.fr/operation/35710601/espace-stockage" target="_blank" class="tag bg-brand text-white border-brand hover:bg-white hover:text-dark transition-colors cursor-pointer link-arrow">MyNotary</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 16 - TACK / LE PAGE / CHEVALLIER -->
+        <div class="bg-surface border-2 border-white/10 p-4 sm:p-5 card-hover fade-in">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+            <div class="flex-1 min-w-0">
+              <div class="flex items-center gap-2 flex-wrap mb-1">
+                <span class="tag bg-accent/20 text-accent border-accent/50 text-xs">Offre d'achat</span>
+              </div>
+              <h3 class="font-bold text-sm sm:text-base truncate text-white">TACK Louis / LE PAGE Michael / CHEVALLIER Marie-Francoise</h3>
+            </div>
+            <div class="flex items-center gap-2 shrink-0">
+              <a href="https://api.mynotary.fr/files/87cf6c55-82c2-47e5-89e6-1b45fc4ed69f" target="_blank" class="tag bg-card text-gray-200 border-white/20 hover:bg-brand hover:text-white hover:border-brand transition-colors cursor-pointer">PDF</a>
+              <a href="https://api.mynotary.fr/files/833d470f-2bf1-4738-8d22-f2cc1d25072a" target="_blank" class="tag bg-card text-gray-200 border-white/20 hover:bg-brand hover:text-white hover:border-brand transition-colors cursor-pointer">PDF</a>
+              <a href="https://api.mynotary.fr/files/01688bfc-00ed-4edc-84eb-98a729e60144" target="_blank" class="tag bg-card text-gray-200 border-white/20 hover:bg-brand hover:text-white hover:border-brand transition-colors cursor-pointer">PDF</a>
+              <a href="https://app.mynotary.fr/operation/35711550/espace-stockage" target="_blank" class="tag bg-brand text-white border-brand hover:bg-white hover:text-dark transition-colors cursor-pointer link-arrow">MyNotary</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 17 - HUON-DUMENTAT -->
+        <div class="bg-surface border-2 border-white/10 p-4 sm:p-5 card-hover fade-in">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+            <div class="flex-1 min-w-0">
+              <div class="flex items-center gap-2 flex-wrap mb-1">
+                <span class="tag bg-brand/20 text-brand border-brand/50 text-xs">Mandat de vente</span>
+              </div>
+              <h3 class="font-bold text-sm sm:text-base truncate text-white">HUON-DUMENTAT Melea / HUON-DUMENTAT Alaxira / HUON Bernard / Marly-le-Roi</h3>
+            </div>
+            <div class="flex items-center gap-2 shrink-0">
+              <a href="https://api.mynotary.fr/files/6c1fb46b-82df-48d8-b6f5-b2e09e6616d4" target="_blank" class="tag bg-card text-gray-200 border-white/20 hover:bg-brand hover:text-white hover:border-brand transition-colors cursor-pointer">PDF</a>
+              <a href="https://api.mynotary.fr/files/26529ad8-2e15-4a24-94bb-211dad399a58" target="_blank" class="tag bg-card text-gray-200 border-white/20 hover:bg-brand hover:text-white hover:border-brand transition-colors cursor-pointer">PDF</a>
+              <a href="https://api.mynotary.fr/files/99344c1f-6e36-474f-ba84-34fa99a82e39" target="_blank" class="tag bg-card text-gray-200 border-white/20 hover:bg-brand hover:text-white hover:border-brand transition-colors cursor-pointer">PDF</a>
+              <a href="https://app.mynotary.fr/operation/35721061/espace-stockage" target="_blank" class="tag bg-brand text-white border-brand hover:bg-white hover:text-dark transition-colors cursor-pointer link-arrow">MyNotary</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 18 - BAILLY - ALERTE PPE -->
+        <div class="bg-alert/10 border-2 border-alert p-4 sm:p-5 card-hover fade-in">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+            <div class="flex-1 min-w-0">
+              <div class="flex items-center gap-2 flex-wrap mb-1">
+                <span class="tag bg-brand/20 text-brand border-brand/50 text-xs">Mandat de vente</span>
+                <span class="tag bg-alert text-white border-alert text-xs">ALERTE PPE</span>
+              </div>
+              <h3 class="font-bold text-sm sm:text-base truncate text-white">BAILLY Thomas / Courbevoie</h3>
+            </div>
+            <div class="flex items-center gap-2 shrink-0">
+              <a href="https://api.mynotary.fr/files/9d967f3a-a01c-417e-967e-6336dfc8e9d0" target="_blank" class="tag bg-card text-gray-200 border-white/20 hover:bg-alert hover:text-white hover:border-alert transition-colors cursor-pointer">PDF</a>
+              <a href="https://app.mynotary.fr/operation/35755055/espace-stockage" target="_blank" class="tag bg-brand text-white border-brand hover:bg-white hover:text-dark transition-colors cursor-pointer link-arrow">MyNotary</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 19 - LAIR -->
+        <div class="bg-surface border-2 border-white/10 p-4 sm:p-5 card-hover fade-in">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+            <div class="flex-1 min-w-0">
+              <div class="flex items-center gap-2 flex-wrap mb-1">
+                <span class="tag bg-brand/20 text-brand border-brand/50 text-xs">Mandat de vente</span>
+              </div>
+              <h3 class="font-bold text-sm sm:text-base truncate text-white">LAIR Florian / Paris 10</h3>
+            </div>
+            <div class="flex items-center gap-2 shrink-0">
+              <a href="https://api.mynotary.fr/files/1a8dfbdf-0fbd-4b5b-9f6c-bce30b5b2157" target="_blank" class="tag bg-card text-gray-200 border-white/20 hover:bg-brand hover:text-white hover:border-brand transition-colors cursor-pointer">PDF</a>
+              <a href="https://app.mynotary.fr/operation/35771688/espace-stockage" target="_blank" class="tag bg-brand text-white border-brand hover:bg-white hover:text-dark transition-colors cursor-pointer link-arrow">MyNotary</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 20 - SCI DE LA LAUVE -->
+        <div class="bg-surface border-2 border-white/10 p-4 sm:p-5 card-hover fade-in">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+            <div class="flex-1 min-w-0">
+              <div class="flex items-center gap-2 flex-wrap mb-1">
+                <span class="tag bg-brand/20 text-brand border-brand/50 text-xs">Mandat de vente</span>
+              </div>
+              <h3 class="font-bold text-sm sm:text-base truncate text-white">SCI DE LA LAUVE / Saint-Raphael</h3>
+            </div>
+            <div class="flex items-center gap-2 shrink-0">
+              <a href="https://api.mynotary.fr/files/91fdda07-7fc4-46d1-a28b-ee6a45d573c8" target="_blank" class="tag bg-card text-gray-200 border-white/20 hover:bg-brand hover:text-white hover:border-brand transition-colors cursor-pointer">PDF</a>
+              <a href="https://app.mynotary.fr/operation/35803674/espace-stockage" target="_blank" class="tag bg-brand text-white border-brand hover:bg-white hover:text-dark transition-colors cursor-pointer link-arrow">MyNotary</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 21 - LEMAISTRE / RABIAU -->
+        <div class="bg-surface border-2 border-white/10 p-4 sm:p-5 card-hover fade-in">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+            <div class="flex-1 min-w-0">
+              <div class="flex items-center gap-2 flex-wrap mb-1">
+                <span class="tag bg-brand/20 text-brand border-brand/50 text-xs">Mandat de vente</span>
+              </div>
+              <h3 class="font-bold text-sm sm:text-base truncate text-white">LEMAISTRE Arnaud / RABIAU Isabelle / Benerville</h3>
+            </div>
+            <div class="flex items-center gap-2 shrink-0">
+              <a href="https://api.mynotary.fr/files/dd1a9f24-3d01-49d8-aa12-9bc780704375" target="_blank" class="tag bg-card text-gray-200 border-white/20 hover:bg-brand hover:text-white hover:border-brand transition-colors cursor-pointer">PDF</a>
+              <a href="https://api.mynotary.fr/files/681dd1df-fe61-4f89-ad47-072ca5f21a95" target="_blank" class="tag bg-card text-gray-200 border-white/20 hover:bg-brand hover:text-white hover:border-brand transition-colors cursor-pointer">PDF</a>
+              <a href="https://app.mynotary.fr/operation/36797391/espace-stockage" target="_blank" class="tag bg-brand text-white border-brand hover:bg-white hover:text-dark transition-colors cursor-pointer link-arrow">MyNotary</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 22 - BERVELT -->
+        <div class="bg-surface border-2 border-white/10 p-4 sm:p-5 card-hover fade-in">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+            <div class="flex-1 min-w-0">
+              <div class="flex items-center gap-2 flex-wrap mb-1">
+                <span class="tag bg-brand/20 text-brand border-brand/50 text-xs">Mandat de vente</span>
+              </div>
+              <h3 class="font-bold text-sm sm:text-base truncate text-white">BERVELT Patrick / Mandat 3270</h3>
+            </div>
+            <div class="flex items-center gap-2 shrink-0">
+              <a href="https://api.mynotary.fr/files/50c710c3-75d9-40bc-9cab-0805da1117b2" target="_blank" class="tag bg-card text-gray-200 border-white/20 hover:bg-brand hover:text-white hover:border-brand transition-colors cursor-pointer">PDF</a>
+              <a href="https://app.mynotary.fr/operation/36803550/espace-stockage" target="_blank" class="tag bg-brand text-white border-brand hover:bg-white hover:text-dark transition-colors cursor-pointer link-arrow">MyNotary</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 23 - VOS / LABOUZE / DE PERTHUIS -->
+        <div class="bg-surface border-2 border-white/10 p-4 sm:p-5 card-hover fade-in">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+            <div class="flex-1 min-w-0">
+              <div class="flex items-center gap-2 flex-wrap mb-1">
+                <span class="tag bg-accent/20 text-accent border-accent/50 text-xs">Offre d'achat</span>
+              </div>
+              <h3 class="font-bold text-sm sm:text-base truncate text-white">VOS Maarten / LABOUZE Jade / DE PERTHUIS Bertrand / Cuy-Saint-Fiacre</h3>
+            </div>
+            <div class="flex items-center gap-2 shrink-0">
+              <a href="https://api.mynotary.fr/files/0e4e25ce-445e-48f8-ae42-f0510ece07df" target="_blank" class="tag bg-card text-gray-200 border-white/20 hover:bg-brand hover:text-white hover:border-brand transition-colors cursor-pointer">PDF</a>
+              <a href="https://api.mynotary.fr/files/29eaab8c-8b94-48e0-88f9-4424383123f1" target="_blank" class="tag bg-card text-gray-200 border-white/20 hover:bg-brand hover:text-white hover:border-brand transition-colors cursor-pointer">PDF</a>
+              <a href="https://api.mynotary.fr/files/09253ed4-436b-4857-922f-f7bbc4cbbde7" target="_blank" class="tag bg-card text-gray-200 border-white/20 hover:bg-brand hover:text-white hover:border-brand transition-colors cursor-pointer">PDF</a>
               <a href="https://app.mynotary.fr/operation/36836407/espace-stockage" target="_blank" class="tag bg-brand text-white border-brand hover:bg-white hover:text-dark transition-colors cursor-pointer link-arrow">MyNotary</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 24 - FRANCE CAPITALE -->
+        <div class="bg-surface border-2 border-white/10 p-4 sm:p-5 card-hover fade-in">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+            <div class="flex-1 min-w-0">
+              <div class="flex items-center gap-2 flex-wrap mb-1">
+                <span class="tag bg-brand/20 text-brand border-brand/50 text-xs">Mandat de vente</span>
+              </div>
+              <h3 class="font-bold text-sm sm:text-base truncate text-white">FRANCE CAPITALE (SCI) / Mandat 3278</h3>
+            </div>
+            <div class="flex items-center gap-2 shrink-0">
+              <a href="https://api.mynotary.fr/files/3f20703b-0216-4e29-8ab9-e763b215a5c6" target="_blank" class="tag bg-card text-gray-200 border-white/20 hover:bg-brand hover:text-white hover:border-brand transition-colors cursor-pointer">PDF</a>
+              <a href="https://app.mynotary.fr/operation/36902211/espace-stockage" target="_blank" class="tag bg-brand text-white border-brand hover:bg-white hover:text-dark transition-colors cursor-pointer link-arrow">MyNotary</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 25 - LEVY -->
+        <div class="bg-surface border-2 border-white/10 p-4 sm:p-5 card-hover fade-in">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+            <div class="flex-1 min-w-0">
+              <div class="flex items-center gap-2 flex-wrap mb-1">
+                <span class="tag bg-brand/20 text-brand border-brand/50 text-xs">Mandat de vente</span>
+              </div>
+              <h3 class="font-bold text-sm sm:text-base truncate text-white">LEVY Serge / LEVY Marie / Asnieres-sur-Seine</h3>
+            </div>
+            <div class="flex items-center gap-2 shrink-0">
+              <a href="https://api.mynotary.fr/files/9b28fde5-b722-4f3f-be53-c26a97364921" target="_blank" class="tag bg-card text-gray-200 border-white/20 hover:bg-brand hover:text-white hover:border-brand transition-colors cursor-pointer">PDF</a>
+              <a href="https://api.mynotary.fr/files/06b2dc54-58c4-4d46-85b8-6e2b69e724ff" target="_blank" class="tag bg-card text-gray-200 border-white/20 hover:bg-brand hover:text-white hover:border-brand transition-colors cursor-pointer">PDF</a>
+              <a href="https://app.mynotary.fr/operation/36957622/espace-stockage" target="_blank" class="tag bg-brand text-white border-brand hover:bg-white hover:text-dark transition-colors cursor-pointer link-arrow">MyNotary</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 26 - LESVENAN / KERJEAN -->
+        <div class="bg-surface border-2 border-white/10 p-4 sm:p-5 card-hover fade-in">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+            <div class="flex-1 min-w-0">
+              <div class="flex items-center gap-2 flex-wrap mb-1">
+                <span class="tag bg-brand/20 text-brand border-brand/50 text-xs">Mandat de vente</span>
+              </div>
+              <h3 class="font-bold text-sm sm:text-base truncate text-white">LESVENAN Elisabeth / KERJEAN Charles / Saint-Malo</h3>
+            </div>
+            <div class="flex items-center gap-2 shrink-0">
+              <a href="https://api.mynotary.fr/files/0bfc94c2-cef1-465b-a5ab-ef3d648bd4d2" target="_blank" class="tag bg-card text-gray-200 border-white/20 hover:bg-brand hover:text-white hover:border-brand transition-colors cursor-pointer">PDF</a>
+              <a href="https://api.mynotary.fr/files/9e3ba0d8-06b4-46ad-b5f5-a7a53523233c" target="_blank" class="tag bg-card text-gray-200 border-white/20 hover:bg-brand hover:text-white hover:border-brand transition-colors cursor-pointer">PDF</a>
+              <a href="https://app.mynotary.fr/operation/36958747/espace-stockage" target="_blank" class="tag bg-brand text-white border-brand hover:bg-white hover:text-dark transition-colors cursor-pointer link-arrow">MyNotary</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 27 - LECAILLON / RAOULT -->
+        <div class="bg-surface border-2 border-white/10 p-4 sm:p-5 card-hover fade-in">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+            <div class="flex-1 min-w-0">
+              <div class="flex items-center gap-2 flex-wrap mb-1">
+                <span class="tag bg-brand/20 text-brand border-brand/50 text-xs">Mandat de vente</span>
+              </div>
+              <h3 class="font-bold text-sm sm:text-base truncate text-white">LECAILLON Frederique / RAOULT Herve / Paris 17</h3>
+            </div>
+            <div class="flex items-center gap-2 shrink-0">
+              <a href="https://api.mynotary.fr/files/3135a469-6eea-4239-afe1-d2c8af6f3071" target="_blank" class="tag bg-card text-gray-200 border-white/20 hover:bg-brand hover:text-white hover:border-brand transition-colors cursor-pointer">PDF</a>
+              <a href="https://api.mynotary.fr/files/50908138-0d69-49e5-991f-306b6057c447" target="_blank" class="tag bg-card text-gray-200 border-white/20 hover:bg-brand hover:text-white hover:border-brand transition-colors cursor-pointer">PDF</a>
+              <a href="https://app.mynotary.fr/operation/39184613/espace-stockage" target="_blank" class="tag bg-brand text-white border-brand hover:bg-white hover:text-dark transition-colors cursor-pointer link-arrow">MyNotary</a>
             </div>
           </div>
         </div>
@@ -758,23 +710,41 @@
       </div>
 
       <div class="grid gap-4 max-w-3xl">
-        <!-- MATON -->
+        <!-- BAILLY -->
         <div class="bg-card border-2 border-alert p-6 fade-in">
           <div class="flex items-start gap-4">
             <div class="w-12 h-12 bg-alert/20 border-2 border-alert flex items-center justify-center text-2xl shrink-0">&#9888;</div>
             <div class="flex-1">
-              <h3 class="font-black text-xl mb-1 text-white">Benoit MATON</h3>
-              <p class="text-gray-300 text-sm mb-3">Mandataire &mdash; Detecte sur 3 dossiers differents</p>
+              <h3 class="font-black text-xl mb-1 text-white">Thomas BAILLY</h3>
+              <p class="text-gray-300 text-sm mb-3">Vendeur &mdash; Mandat 3271, Courbevoie</p>
               <div class="flex flex-wrap gap-2 mb-3">
-                <span class="tag bg-alert/20 text-alert border-alert text-xs">3 alertes PPE</span>
+                <span class="tag bg-alert/20 text-alert border-alert text-xs">Alerte PPE</span>
                 <span class="tag bg-white/10 text-gray-300 border-white/30 text-xs">0 alerte Gel</span>
               </div>
               <div class="flex flex-wrap gap-2">
-                <a href="https://app.mynotary.fr/operation/36902211/espace-stockage" target="_blank" class="text-sm text-brand hover:text-white transition-colors link-arrow">FRANCE CAPITALE</a>
+                <a href="https://app.mynotary.fr/operation/35755055/espace-stockage" target="_blank" class="text-sm text-brand hover:text-white transition-colors link-arrow">Voir le dossier</a>
                 <span class="text-gray-500">|</span>
-                <a href="https://app.mynotary.fr/operation/35755055/espace-stockage" target="_blank" class="text-sm text-brand hover:text-white transition-colors link-arrow">BAILLY / Courbevoie</a>
+                <a href="https://api.mynotary.fr/files/9d967f3a-a01c-417e-967e-6336dfc8e9d0" target="_blank" class="text-sm text-accent hover:text-white transition-colors link-arrow">Rapport PDF</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- LELIEVRE -->
+        <div class="bg-card border-2 border-alert p-6 fade-in">
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 bg-alert/20 border-2 border-alert flex items-center justify-center text-2xl shrink-0">&#9888;</div>
+            <div class="flex-1">
+              <h3 class="font-black text-xl mb-1 text-white">Laure LELIEVRE</h3>
+              <p class="text-gray-300 text-sm mb-3">Offrant &mdash; Offre d'achat, Loire-Authion</p>
+              <div class="flex flex-wrap gap-2 mb-3">
+                <span class="tag bg-alert/20 text-alert border-alert text-xs">Alerte PPE</span>
+                <span class="tag bg-white/10 text-gray-300 border-white/30 text-xs">0 alerte Gel</span>
+              </div>
+              <div class="flex flex-wrap gap-2">
+                <a href="https://app.mynotary.fr/operation/35601763/espace-stockage" target="_blank" class="text-sm text-brand hover:text-white transition-colors link-arrow">Voir le dossier</a>
                 <span class="text-gray-500">|</span>
-                <a href="https://app.mynotary.fr/operation/35771688/espace-stockage" target="_blank" class="text-sm text-brand hover:text-white transition-colors link-arrow">LAIR / Paris 10</a>
+                <a href="https://api.mynotary.fr/files/7f084bc6-c213-418a-8f60-4cd7f8691f61" target="_blank" class="text-sm text-accent hover:text-white transition-colors link-arrow">Rapport PDF</a>
               </div>
             </div>
           </div>
@@ -794,7 +764,7 @@
               <div class="flex flex-wrap gap-2">
                 <a href="https://app.mynotary.fr/operation/35485618/espace-stockage" target="_blank" class="text-sm text-brand hover:text-white transition-colors link-arrow">Voir le dossier</a>
                 <span class="text-gray-500">|</span>
-                <a href="https://api.mynotary.fr/files/06c5b16a-ba23-4931-8c19-68963abf5729" target="_blank" class="text-sm text-accent hover:text-white transition-colors link-arrow">Rapport PDF</a>
+                <a href="https://api.mynotary.fr/files/20be7f8d-1fe2-4f4c-9f3c-ab3003bbaadd" target="_blank" class="text-sm text-accent hover:text-white transition-colors link-arrow">Rapport PDF</a>
               </div>
             </div>
           </div>
@@ -847,11 +817,11 @@
         <ul class="space-y-3 text-gray-200">
           <li class="flex items-start gap-3">
             <span class="text-success font-bold text-lg leading-none mt-0.5">&#10003;</span>
-            <span><strong class="text-white">28 dossiers</strong> de fevrier deja traites avec <strong class="text-white">76 rapports PDF</strong></span>
+            <span><strong class="text-white">27 dossiers</strong> de fevrier deja traites avec <strong class="text-white">47 rapports PDF</strong></span>
           </li>
           <li class="flex items-start gap-3">
             <span class="text-success font-bold text-lg leading-none mt-0.5">&#10003;</span>
-            <span><strong class="text-white">Janvier 2026</strong> entierement traite aussi (27 contrats)</span>
+            <span>Les vrais <strong class="text-white">clients vendeurs et acquereurs</strong> sont verifies (pas les intermediaires)</span>
           </li>
           <li class="flex items-start gap-3">
             <span class="text-success font-bold text-lg leading-none mt-0.5">&#10003;</span>
@@ -859,7 +829,7 @@
           </li>
           <li class="flex items-start gap-3">
             <span class="text-alert font-bold text-lg leading-none mt-0.5">!</span>
-            <span><strong class="text-white">4 alertes PPE</strong> detectees (MATON x3 + BEKER) &mdash; a verifier manuellement</span>
+            <span><strong class="text-white">3 alertes PPE</strong> detectees (BAILLY + LELIEVRE + BEKER) &mdash; a verifier manuellement</span>
           </li>
         </ul>
       </div>
